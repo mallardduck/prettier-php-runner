@@ -10,7 +10,7 @@ Now you can use the power of Prettier with your PHP projects too!
 
 ```php
 \MallardDuck\PrettierPhp\PrettierHtml::format(
-    code: '<?php echo "Hello World"; ?>',
+    html: '<html><body><div><h1>Heading</h1></div></body></html>'
 );
 ```
 
@@ -19,7 +19,7 @@ Now you can use the power of Prettier with your PHP projects too!
 You can install the package via composer:
 
 ```bash
-composer require mallardduck/prettier-php
+composer require mallardduck/prettier-php-runner
 ```
 
 In your project, you should have the JavaScript package [`prettier`](https://github.com/prettier/prettier) installed. You can install it via npm...
