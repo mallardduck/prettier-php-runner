@@ -1,0 +1,50 @@
+{
+    "name": "mallardduck/prettier-php-runner",
+    "description": "Reformat code using Prettier in PHP",
+    "keywords": [
+        "prettier"
+    ],
+    "homepage": "https://github.com/mallardduck/prettier-php-runner",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Pock",
+            "email": "self@danpock.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "symfony/process": "^6.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^v3.0",
+        "league/flysystem": "^3.0",
+        "pestphp/pest": "^1.8",
+        "phpunit/phpunit": "^9.5",
+        "spatie/pest-plugin-snapshots": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MallardDuck\\PrettierPhp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MallardDuck\\PrettierPhp\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage-html build/coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

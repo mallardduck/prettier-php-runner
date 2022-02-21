@@ -1,0 +1,8 @@
+{
+  "name": "prettier-php-runner",
+  "author": "MallardDuck",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^2.5.1"
+  }
+}
